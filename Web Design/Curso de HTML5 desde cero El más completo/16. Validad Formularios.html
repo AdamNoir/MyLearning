@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Formularios</title>
+</head>
+<body>
+    <h1>Validad Formularios</h1>
+    <form>
+        <!-- Requiere indica que no puede dejarse el campo vacio -->
+        <!-- minlength indica que debe cumplir con un minimo de inforamcion -->
+        <!-- maxlength es el maximo de informacion, una vez llena ya no escribe -->
+        <!-- pattern usa expresiones reguales para establecer que caracteres podremos usar -->
+        <input type="text" required
+        minlength="5" 
+        maxlength="15"
+        pattern="[A-Za-z]+">
+
+        <br>
+        <!-- min para el valor numero y max para el valor maximo -->
+        <input type="number" max="20" min="5" required>
+        <input type="submit" value="Validar">
+    </form>
+</body>
+</html>

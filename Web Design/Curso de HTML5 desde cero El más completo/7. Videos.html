@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+    <h1>Video</h1>
+    <!-- Src es para la locacion del video -->
+    <!-- Controls muestra los controles de plat, pause etc en pantalla -->
+    <!-- Autoplay hace que se reproducta el video apenas cargada la pagina -->
+    <video src="videos/LTA OP2.mp4" controls autoplay muted width="500">
+        Tu nagevador no es compatiple con la reproduccion de videos
+    </video>
+    <!-- NOTAS -->
+    <!-- Autoplay no funcionara porque los navegaodres bloquean esta opcion -->
+    <!-- Para que funcione es tan facil como habilitarla desde el navegador -->
+    <!-- O bien, usando Muted para no darnos un susto -->
+
+    <!-- Poster es para poner una minuatura -->
+    <video controls width="500" poster="imagenes/img2.png">
+        <!-- Con source podemos cargar varios videos de diferentes foramtos -->
+        <!-- Podemos hacer una lista y si no carga uno carga el siguente -->
+        <source src="videos/LTA OP2.mp4" type="video/mp4">
+        <source src="videos/LTA OP2.mkv" type="video/mkv">
+        Tu navegador no es compatible
+    </video>
+</body>
+</html>

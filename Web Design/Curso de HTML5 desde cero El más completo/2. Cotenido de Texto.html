@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parrafos y Texto</title>
+</head>
+<body>
+    <!-- Etiqueta de parrafo -->
+    <p>Esto es un parrafo</p><!-- Entre parrafo y parrafo por defecto hay un salto de lina que con CSS se puede eliminar -->
+    <p>Esto tambien es un parrafo</p>
+    <p>Y este es tambien un parrafo</p>
+
+    <!-- Linea divisora -->
+    <hr/> <!-- No es necesario cerrar las etiquetas con / al final,pero es una buena practica-->
+
+    <p>Este es otro parrafo</p>
+
+    <!-- Por mas saltos de linea que ponga estos no se veran en el navegador -->
+
+    <p>Y aqui hay otro</p>
+    <!-- Para generar un salto de linea hay que usar este etiqueta;  -->
+    <br/><!-- Es como hacer un ENTER y cada una representa un salto de linea -->
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/><!-- Pueden usarse tantas como quiera -->
+    <p>Este parrafo quedo demasiado lejos</p>
+
+    <!-- Todo lo que haga dentro de un parrafo no es considerado por el navegador -->
+    <p>Lorem 
+        ipsum dolor        sit ame     t 
+        co   ns 
+        ect   etur adip    isicing elit.   
+                                          Voluptate dolore quibusdam, 
+        
+        ab cum voluptatum pariatur tempore iste ipsa tempora labore.</p>
+    <!-- Para poder visualizar estas acciones hay que usar HTML SYMBOLS -->
+    <!-- Estos codigos se usan comenzando con &codigo; -->
+    <p>Lorem ipsum &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nsc; dolor sit amet consectetur adipisicing elit. Sequi ab, enim et laboriosam ipsum saepe perspiciatis commodi natus dolores adipisci.</p>
+
+    <!-- Y si, puedo hacer uso de BR dentro de un parrafo para saltos de linea -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/> quo fuga eveniet accusamus nemo id molestiae, amet praesentium eius vero.</p>
+
+    <!-- Negritas y Cursivas -->
+    <!-- Para el texto en negritas hay dos formas, con la etiqueta String y la etiqueta B -->
+    <!-- String genera semantica, es decir deja claro al buscador web que es una palabra imporante, clave para la busqueda -->
+    <!-- B es mas generica, solo coloca en negritas -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Aperiam neque voluptates</strong> Aperiam neque voluptates at perspiciatis quis ullam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur <b>adipisicing elit.</b> Aperiam neque voluptates at perspiciatis quis ullam!</p>
+
+    <!-- Cursivas -->
+    <!-- Existen dos formas Em e I -->
+    <!-- Em da semantica e I es generica, no da semantica -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <em>Cumque illo</em>, nemo autem animi atque nesciunt corporis.</p>
+    <p>Lorem <i>ipsum dolor sit amet</i> consectetur adipisicing elit. Nobis mollitia quod illum quos odio!</p>
+
+    <!-- Pueden tenerse palabras en negritas y cursivas -->
+    <p>Lorem ipsum dolor <strong><em>sit amet consectetur</em></strong> adipisicing elit. Dolore, quae.</p>
+    <p>Lorem ipsum dolor sit amet <b><i>consectetur adipisicing</i></b> elit. Nihil, optio.</p>
+    <p>Lorem ipsum dolor sit amet consectetur <strong><i>adipisicing</i></strong> elit. Harum ullam asperiores autem enim.</p>
+    <p>Lorem <b><em>ipsum dolor</em></b> sit amet, consectetur adipisicing elit. Fugiat, aliquam! Accusamus, natus.</p>
+
+    <!-- SPAN generica para estilos -->
+    <!-- Esta etiqueta no hace nada a nivel de texto, pero se usa para indicar que este texto sera modificado con CSS -->
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span>Mollitia</span>?</p>
+
+    <!-- Blockquote -->
+    <blockquote cite="Curso de HTML" title="Frase epica">Esto es una frase dicha seguramente por algun famoso, o puede que solo sea una frase usada de ejemplo para enseñar a colocar frases en un documento HTML.</blockquote>
+</body>
+</html>

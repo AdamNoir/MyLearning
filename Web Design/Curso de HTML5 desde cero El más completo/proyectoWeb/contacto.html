@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/logoHTML.png">
+    <title>Multimedia</title>
+</head>
+<body>
+    <header>
+        <h1>Mi Gran Proyecto Web</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="dieta.html">Dieta</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Contacto</h2>
+        <section id="contacto">
+            <form >
+                <div>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+                <div>
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" name="apellido" id="apellido">
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="edad">Edad: </label>
+                    <input type="number" name="edad" id="edad">
+                </div>
+                <div>
+                    <label for="genero">Genero: </label>
+                    <select name="generos" id="genero">
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="motivo">Motivo de Contacto: </label>
+                    <textarea name="motivo" id="motivo" cols="19" rows="3"></textarea>
+                </div>
+                <input type="submit" value="Enviar Datos">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Pagina web diseña por webnoircode en curso HTML &copy; 2022</p>
+    </footer>
+</body>
+</html>
