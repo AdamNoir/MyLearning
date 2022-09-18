@@ -113,12 +113,42 @@ funcionAnonima("Pepe");
 /************************************************************************
  * TEMPLATE STRING
  ************************************************************************
--- `
+-- Son cadenas literales que habilitan el uso de expresiones incrustradas.
+-- Hace uso de la comilla invetida: `
+-- Puede hacer uso de variables, expresiones y secuencias de escape.
 *************************************************************************/ 
 
 var variable = "Soy una variable.";
 console.log(`El contenido de la variable es ${variable}`);
 
+/************************************************************************
+ * EJERCICIO
+ ************************************************************************
+-- Implementa una funcion que nos permita evaluar el porcentaje de respuestas
+positivas y negativas de un examen. 
+-- La funcion debe recibir NOMBRE, RESPUETAS POSITIVAS, RESPUESTAS NEGATIVAS.
+-- La funcion debe calcular que porcentaje representa cada tipo de respuetas,
+en base a un total de 100 preguntas.
+-- En base a las respuestas positivas de define el Score:
+A > 90%, B 70% - 80%, C 45% - 69%, D < 45%
+*************************************************************************/ 
+console.log("### FUNCION CALCULAR PORCENTAJES ###");
+function calcularPorcentaje(nombre, positivas, negativas){
+    var correctas = (positivas/100)*100;
+    var incorrectas = negativas/100;
+    console.log(`${nombre} obtuviste ${positivas} bien y ${negativas} mal.`);
+    console.log(`Teniendo un porcentaje de ${correctas} y ${incorrectas}`);
+    if (correctas > 90){
+        console.log("A");
+    }else if (correctas >= 70){
+        console.log("B");
+    }else if(correctas >= 45){
+        console.log("C");
+    }else{
+        console.log("D");
+    }
+}
+calcularPorcentaje("Ivan", 70, 30);
 /************************************************************************
  * EJERCICIOS FUNCIONES
  ************************************************************************
