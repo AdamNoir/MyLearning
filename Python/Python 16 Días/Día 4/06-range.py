@@ -15,7 +15,7 @@ for numero in range(5):
     print(numero)
 
 for numero in range(1, 6):
-    print(numero)
+    print(f"---{numero}")
 
 for numero in range(2, 21, 2):
     print(numero)

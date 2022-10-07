@@ -8,7 +8,7 @@ Preguntar sexo y nombre e indicar que grupo es.
 sex = input("¿Eres hombre o mujer?: ")
 name = input("Ingresa tu nombre: ")
 
-if (sex.lower == "mujer" and name.lower() < "m") or (sex.lower == "hombre" and name.lower() > "n"):
+if (sex.lower() == "mujer" and name.lower() < "m") or (sex.lower() == "hombre" and name.lower() > "n"):
     print("ERES DE A")
 else:
     print("Eres del B")
