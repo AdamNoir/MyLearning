@@ -12,9 +12,10 @@ class Cliente(Persona):
         self.balance = balance
 
     def __str__(self):
-        return f"Cliente: {self.nombre} {self.apellido}+" \
+        cliente_str = f"Cliente: {self.nombre} {self.apellido}+" \
                f"Numero de Cuenta: {self.numero_cuenta}+" \
                f"Balance: {self.balance}"
+        return cliente_str
 
     def depositar(self, cantidad):
         self.balance = self.balance + cantidad
