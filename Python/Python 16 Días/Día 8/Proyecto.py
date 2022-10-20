@@ -24,7 +24,6 @@ def decorador_saludo(funcion):
     yield saludos
 
 
-
 def mi_generador_perfumeria():
     numero = 0
     while True:
@@ -32,13 +31,11 @@ def mi_generador_perfumeria():
         numero += 1
 
 
-
 def mi_generador_farmacia():
     numero = 0
     while True:
         yield "P-" + str(numero)
         numero += 1
-
 
 
 def mi_generador_cosmeticos():
@@ -54,6 +51,8 @@ print(next(farmacia))
 print(next(farmacia))
 print(next(farmacia))
 print(next(farmacia))"""
+
+
 def inicio():
     print("-" * 40)
     farmacia = mi_generador_farmacia()
