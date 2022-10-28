@@ -9,12 +9,14 @@ menu_int = 0
 # Establecer ruta de acceso
 ruta = Path(Path.home(), "Recetas")
 
+
 # Funcion para contar recetas
 def contar_recetas(ruta):
     contador = 0
     for receta in Path(ruta).glob("**/*.txt"):
         contador = contador + 1
     return contador
+
 
 def inicio():
     system("cls")
@@ -23,6 +25,7 @@ def inicio():
     print(f"Las recetas se encuentran en: {ruta}")
     print(f"En total hay: {contar_recetas(ruta)} recetas")
     print("*" * 50)
+
 
 def menu():
     while menu != 6:
@@ -61,7 +64,10 @@ def menu():
         elif menu == 6:
             pass
             # Salir
+
+
 # -------------------------------
+
 
 def inicio_usuario():
     """
@@ -83,7 +89,7 @@ def inicio_usuario():
     print(f"La ruta de acceso es: {ruta}")
     print(f"La cantidad de Recetas es: {contador}")
     menu_principal(name)
-    
+
 
 # Funcion While
 def menu_principal(name):
@@ -114,6 +120,7 @@ def menu_principal(name):
         else:
             print("No entiendo que quieres hacer. Intenta de Nuevo.")
 
+
 # Funcion Leer Receta
 def categoria_leer_receta():
     """
@@ -121,5 +128,6 @@ def categoria_leer_receta():
     """
     print("LEER RECETA")
 
+
 # Ejecucion
-inicio()
+inicio_usuario()

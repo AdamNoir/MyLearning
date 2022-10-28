@@ -24,6 +24,7 @@ def decorador_saludo(funcion):
     yield saludos
 
 
+@decorador_saludo
 def mi_generador_perfumeria():
     numero = 0
     while True:
@@ -58,6 +59,10 @@ def inicio():
     farmacia = mi_generador_farmacia()
     perfumeria = mi_generador_perfumeria()
     cometicos = mi_generador_cosmeticos()
+    print("[1] Farmacia")
+    print("[2] Perfumeria")
+    print("[3] Cosmeticos")
+    print("[4] Salir.")
     while True:
         eleccion = int(input("Elige opcion: "))
         if eleccion == 1:
