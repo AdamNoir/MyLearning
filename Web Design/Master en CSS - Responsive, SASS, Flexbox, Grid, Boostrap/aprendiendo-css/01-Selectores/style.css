@@ -1,0 +1,121 @@
+/*SELECTORES*/
+
+/*Selector Universal*/
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* Selector de Etiqueta */
+h1 {
+    background: red;
+    color: white;
+    padding: 10px;
+}
+
+a {
+    font-size: 18px;
+    color: green;
+    text-decoration: none;
+}
+
+/* Selector de Etiquetas dentro de otras etiquetas */
+footer a {
+    color: red;;
+}
+
+/* Selectores por ID */
+#description {
+    border: 5px solid black;
+    padding: 15px;
+}
+
+/* Compartir estilos con selectores */
+#titulo, 
+h2 {
+    color: aqua;
+    background: rebeccapurple;
+}
+
+/* Selector por clase */
+.parrafo {
+    font-style: italic;
+    /*text-decoration: underline;*/
+    font-weight: bold;
+    padding: 10px;
+}
+
+.parrafo1 {
+    background-color: green;
+    color: white;
+}
+
+.parrafo3 {
+    background-color: orange;
+    color: black;
+}
+
+/* Selectores de Atributo */
+
+/* Usando selectores desendientes para dentro del elemento con el id usuario, 
+aplicar estilos solo al elemento form */
+#usuario form {
+    border: 5px solid blue;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+/* Usando selectores desendientes para dentro del elemento con el id usuario, aplicar
+estilos al formulario en general a todo el contenido */
+#usuario form * {
+    display: block;
+}
+
+/* Solo afecta a los input de tipo texto */
+input[type="text"] {
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 200px;
+}
+
+/* Solo afecta a los input de tipo sumbit. */
+input[type="submit"] {
+    background: green;
+    color: white;
+    padding: 15px;
+    font-size: 17px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/* Selectores Hijos */
+/* Solo aplica estilos a lo que sean hijos directos. Es como el selector desendiente
+pero solo aplica a sus hijos directos, no a todo lo que coincida. */
+#menu > li > a {
+    font-size: 18px;
+    color: red;
+    text-decoration: none;
+}
+
+/* Selectores Desendientes */
+/* Aplica estilos y va escalando hasta llegar el ultimo elemento seleccionado.
+Aplica a todo lo que coincida y que dentro. */
+span { 
+    background-color: white; 
+}
+div span { 
+    background-color: DodgerBlue; 
+}
+
+/* Prioridad */
+/* 1. CSS le hace mas caso a la ultima regla escrita. */
+/* 2. CSS hace mas caso a las instrucciones mas espesificas */
+/* 3. Usando !important se vuelve la mas importante para CSS */
+#saludo h1 {
+    background: brown;
+}
+h1 {
+    background: blue !important;
+}
