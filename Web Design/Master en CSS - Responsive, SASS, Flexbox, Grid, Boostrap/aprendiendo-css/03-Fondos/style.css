@@ -1,0 +1,69 @@
+body {
+    /* Background por si solo es bastante generico.
+    A esta propiedad se le puede agregar color, imagenes, repeticiones y muchas otras cosas.
+    Por esos existen propiedades de background para realizar estilos espesifico.s */
+    background: red;
+
+    /* Background-color establece un color de dondo en cualquier forma. */
+    background-color: rebeccapurple;
+    background-color: #ccc;
+    background-color: rgb(244, 0, 100);   
+
+    /* Background-image establece una imagen de fondo, pasando la url de la imagen */
+    /* Usando path de imagen almancenada en el carpeta del proyecto */
+    background-image: url(img/fondo.jpg);
+    /* Usando url de imagen web */
+    background-image: url(https://w.wallhaven.cc/full/1p/wallhaven-1p398w.jpg);
+
+    /* Background-repeat Establece si el fondo se repite y como lo hara */
+    /* no-repeat no deja se se repita */
+    background-repeat: no-repeat;
+    /* El fondo se repite */
+    background-repeat: repeat;
+    /* Se repite solo en eje de las x, osea horizontal */
+    background-repeat: repeat-x;
+    /* Se repite solo en eje de las y, osea en vertical */
+    background-repeat: repeat-y;
+
+    /* Posicion de la imagen, ajusta para que se vea esa parte que queramos hacer enfasis */
+    background-position: left, bottom;
+    /* Tamaño del fondo, cuanto ocupa. */
+    background-size: 100%;
+
+    /* Si la imagen se queda fija */
+    background-attachment: fixed;
+    /* O si la imagen se mueve con nosotros al hacer un scroll hacia arriba o abajo */
+    background-attachment: scroll;
+}
+
+#caja {
+    border: 5px solid black;
+    padding: 10px;
+    background-color: aquamarine;
+    color: white;
+}
+
+h2 {
+    color: red;
+    background: white;
+    background-image: url(img/pattern.png);
+    border: 5px solid red;
+}
+
+p {
+    color: aliceblue;
+    /* Establece el alineamiento del texto. Centro, derecha, izquierda. */
+    text-align: center;
+    /* Aplica una sangria a cada inicio de parrafo. Se establece en pixeles cuanto de sangria */
+    text-indent: 15px;
+    /* Se establece la distancia entre cada palabra */
+    word-spacing: 10px;
+    /* Establece la distancia entre cada letra */
+    letter-spacing: 5px;
+    /* Alinea el texto verticamlente, arriba, abajo, centro */
+    vertical-align: top;
+    /* Decora el texto con subrayados, tachados, o los quita con none */
+    text-decoration: overline;
+    /* Transforma el texto en mayusculas, minusculas o capitalize para la primera en mayuscula */
+    text-transform: uppercase;
+}

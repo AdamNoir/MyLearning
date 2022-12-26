@@ -1,0 +1,51 @@
+/*Agrega fuentes personalizadas*/
+@font-face{
+    /*Nombre con el que se conocera la fuente y podremos aplicarla*/
+    font-family: fuenteCustom;
+    /*Path de la fuente*/
+    src: url(fonts/Rubik_80s_Fade/Rubik80sFade-Regular.ttf);
+}
+
+h1 {
+    /* Aplica un tipo de fuente distinta a lo textos HTML.
+    Da varias opciones. Si no encuentra una fuente instalada en el sistema intenta con la siguente. */
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: 'Rubik Gemstones', cursive;
+
+    /* Cambia el tamaño de la fuente. Su unida de medida son pixeles, em o porcentaje.
+    Un em = 16px */
+    font-size: 60px;
+
+    /* Establece estilos para colocar en cursiva o poner normal 
+    italic - obloque
+    initial - normal*/
+    font-style: normal;
+
+    /* Colores 
+    Estas formas de aplicar colores son usables en el color del texto, fondos, bordes, etc.
+    Todas funcionan con todo.*/
+    /* Colores del Sistema 
+    Tienen un nombre, escrir un alias con el que identificarlo mas facil*/
+    color: mediumpurple;
+    /* Colores Hexadecimales 
+    Comienzan con una # y son valores dese el 0-9 y a hasta f*/
+    color: #6753ca99;
+    /* Colores RGB 
+    Usa tres colores, rojo, verde y azul, donde cada uno puede tener valores desde el 0 hasta 255*/
+    color: rgb(255, 255, 107);
+    /* Colores RGBA 
+    Igual a rgb donde a es la opcacidad, para volver mas claro el color*/
+    color: rgba(255, 19, 38, 0.6)
+}
+
+h3 {
+    font-family: fuenteCustom ,"Comic Sans MS";
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 38px;
+    /* Establece el grosor de la letra. Lo normal es usal bolder pero tiene varias opciones. 
+    lighter quita grosor, la vuelve mas fina.*/
+    font-weight: bold;
+}

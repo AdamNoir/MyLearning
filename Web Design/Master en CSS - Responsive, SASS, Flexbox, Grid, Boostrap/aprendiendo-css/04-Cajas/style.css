@@ -1,0 +1,61 @@
+* {
+    margin: 0px;
+    padding: 10px;
+}
+
+.caja {
+    /* Establece el ancho del elemento en pixeles o porcentaje de pantalla */
+    width: 250px;
+    /* Establece la altura del elemento en pixeles o porcentaje de pantalla */
+    height: 250px;
+    /* Establecen un ancho minimo o maximo para una caja de CSS */
+    /*min-height: 1000px;
+    max-width: 1000px;*/
+    background-color: lightblue;
+    /* Border
+    Establece un border. El grosor del borde, el estilo y en que color 
+    Tambien existen propieades para un lado en concreto del borde*/
+    border: 10px solid red;
+    border-bottom: 10px solid blue;
+    border-top: 3px solid green;
+    /* Margin 
+    Es un margen, la distancia entre elementos html.
+    Con solo margin aplica un margen cuadrado.
+    Usando existen atributos css espesicicos para cada lado de la caja
+    en un solo margin podemos establecer los cuatro lado, comenzao por arriba, derecha, abajo, izquierda
+    Si solo colocamos dos valores sera para arriba y abajo, y el segundo para derecha izquierda*/
+    margin: 15px;
+    margin: 10px  20px;
+    margin: 10px 40px 50px 10px;
+    margin-top: 15px;
+    margin-bottom: 40ox;
+    margin-left: 24px;
+    margin-right: 10px;
+    /* Padding
+    Es el margen interno, es la distancia entre el borde y el contenido.
+    Funciona exactamente igual que el margin */
+    padding: 20px;
+    padding-bottom: 35px;
+
+    /* Todo esto de los flotados solo aplica a los elementos con su display block. 
+    Los inlinea no funciona.
+    Aunque lo tienen por defecto, es bueno ser espesifico. */
+    display: block;
+     /* Float mueve las cajas a la izquierda o la derecha */
+     float: left;
+}
+
+.clearfix {
+    /* No tiene ningun flotado */
+    float: none;
+    /* Limpia todos los flotados anteriores (puede borrar solo los de la izquierda o derecha) */
+    clear: both;
+}
+
+.cajas p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 250px;
+}

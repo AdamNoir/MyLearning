@@ -1,0 +1,5 @@
+alert("Hola")
+alert("Mundo")
+document.write("Hola mundo")
+console.log("Hola mundo desde consola")
+console.log(15 + 2)
