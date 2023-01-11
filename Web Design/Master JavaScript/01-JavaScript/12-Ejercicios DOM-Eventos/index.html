@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio DOM - Eventos</title>
+    <script src="scritp.js"></script>
+    <style>
+        .box {
+            width: 250px;
+            height: 250px;
+            float: left;
+            margin: 20px;
+        }
+        .dashed {
+            border: 3px dashed black;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        1. Fomulario campos: Nombre, apellidos, edad
+        2. Boton para enviar fomulario: evento sumbit
+        3. Mostrar datos por pantalla
+        4. Tener un boton que al darle click muestra datos del fomulario
+    -->
+    <h1>Ejercicio DOM - Eventos</h1>
+    <!-- # en action para que no redireccione -->
+    <!-- onsubmit en false para que no nos redireccione -->
+    <div class="box">
+        <form action="#" id="formulario" onsubmit="return false;">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+            <span id="error_nombre"></span>
+            <br>
+            <br>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" id="apellidos">
+            <span id="error_apellidos"></span>
+            <br>
+            <br>
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad">
+            <span id="error_edad"></span>
+            <br>
+            <br>
+            <input type="submit" value="Enviar" id="submit">
+        </form>
+    </div>
+    <div class="box dashed">
+        <h3>Informacion del usuario</h3>
+        <hr>
+    </div>
+</body>
+</html>

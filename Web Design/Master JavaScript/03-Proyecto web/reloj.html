@@ -1,0 +1,88 @@
+<!DOCTYPE html5>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Proyecto con JS</title>
+        <!-- Estilos CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link id="theme" rel="stylesheet" href="css/green.css">
+
+        <!-- jQuery -->
+        <script src="js/jQuery/jquery-3.6.3.min.js"></script>
+
+        <!-- Moment js -->
+        <script src="js/moment.min.js"></script>
+        <script src="js/moment-with-locales.js"></script>
+
+        <!-- MAIN.JS -->
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+
+        <div id="selector-theme">
+            <div id="to-green"></div>
+            <div id="to-blue"></div>
+            <div id="to-red"></div>
+        </div>
+
+        <section id="global">
+            <!-- Cabezera -->
+            <header>
+                <div id="logo">
+                    <h1>Proyecto JS</h1>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="reloj.html">Reloj</a></li>
+                        <li><a href="about.html">Sobre mi</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+
+            <!-- Contenido -->
+            <section id="content">
+                <div id="box">
+                    <!-- Cargar Reloj -->
+                    <div id="reloj"></div>
+                </div>
+                <!-- SIDE BAR -->
+                <aside id="side">
+                    <div id="about">
+                        <h4><span>Quien soy</span></h4>
+                        <img src="img/caracol.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                    
+                    <!-- LOGIN -->
+                    <div id="login">
+                        <h4><span>Identificate</span></h4>
+                        <form action="">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="form_name">
+                            <label for="correo">Email</label>
+                            <input type="email" name="correo" id="correo">
+                            <label for="password">Contraseña</label>
+                            <input type="password" name="password" id="password">
+                            <input type="submit" value="Entrar">
+                        </form>
+                    </div>
+                </aside>
+
+                <div class="clearfix"></div>
+
+            </section>
+
+        </section>
+
+        <footer>
+            Proyecto Js &COPY;
+            <a href="#" class="subir">Ir arriba</a>
+        </footer>
+    </body>
+</html>
