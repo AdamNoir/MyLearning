@@ -1,0 +1,154 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#general {
+    margin: 0px auto; /* Esto centra el elemento. */
+    width: 1200px;
+    border: 2px solid #ccc;
+}
+
+#header {
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    color: white;
+    background-color: blue;
+    height: 70px;
+    line-height: 70px;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+#menu{
+    background-color: #cccccc;
+}
+
+#menu ul li{
+    list-style: none;
+    display: block;
+    float: left;
+    border-right: 1px solid black;
+}
+
+#menu ul li a {
+    display: block;
+    padding: 15px;
+    color: #01353b;
+}
+
+#menu ul li:hover{
+    background-color: blue;
+}
+
+#menu ul li:hover a {
+    color: white;
+}
+
+#contenido{
+    display: block;
+    float: left;
+    width: 70%;
+    border: 1px solid red;
+}
+
+#contenido > h1 {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    color: #444;
+    text-shadow: 1px 1px 2px red;
+}
+
+.caja {
+    margin: 30px;
+    display: block;
+    float: left; 
+    border: 1px dashed pink;
+    width: 350px;
+    height: 350px;
+    box-shadow: 5px 5px 15px black;
+    border-radius: 10px;
+
+}
+
+.caja h2 {
+    color: tomato;
+    text-align: center;
+    height: 350px;
+    line-height: 350px;
+}
+
+#lateral {
+    display: block;
+    float: left;
+    width: 29%;
+    height: 500px;
+    max-height: 600px;
+    border: 1px solid green;
+    /* OVER FLOW */
+    /* Usados cuando tenemos mucho texto que sale de una caja.
+    Tiene tres popiedades
+    - Scroll: que crea una brra de desplacamiento (en eje x / eje y)
+    - Hidden que solo corta el texto;
+    - Visible: que lo muestra todo feo */
+    /* Podemos usar overflow-y o -x para indicar de que lado aparecera la barra de desplacmiento */
+    overflow-y: scroll;
+}
+
+#footer {
+    width: 100%;
+    color: white;
+    background-color: gray;
+    text-align: center;
+}
+
+/* POSICIONAMIENTO */
+/* La posicion realtiva es la que ya tenemos por defecto. */
+.libre {
+    /* El posisionamiento RELATIVO es el que viene por defecto y mantiene los elementos en orden
+    realtivo a los otros. Es decir, mueves uno y mueves todo.
+    
+    - El posisionamiento ABSOLUTO es lo contrario, no impora donde lo ponga, no afecta al resto.*/
+    /* Puedo usar popiedades como top, left, right, bottom para indicar en que lugar la quiero. */
+    position: absolute;
+    top: 300px;
+    left: 50%;
+
+    border: 1px solid black;
+    background-color: red;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 13px;
+    z-index: 2;
+}
+
+.libre2 {
+    background-color: green;
+    top: 280px;
+    left: 50%;
+    /* Z-INDEX dependiendo que capa tenga el numero mas grande, quedara por encima de las otras. */
+    z-index: 1;
+}
+
+/* POSCIONIAMIENTO FIJO */
+/* Es como la posicion absoluta, la puedo colocar sin mover nada, pero SIEMPRE PERMANECERA DONDE MISMO. */
+.fija {
+    position: fixed;
+    top: 50%;
+    left: 0px;
+
+    border: 1px solid black;
+    background-color: blue;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 13px;
+}

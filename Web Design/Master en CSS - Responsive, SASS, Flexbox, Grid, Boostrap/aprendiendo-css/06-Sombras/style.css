@@ -1,0 +1,129 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#general {
+    margin: 0px auto; /* Esto centra el elemento. */
+    width: 1200px;
+    border: 2px solid #ccc;
+}
+
+#header {
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    color: white;
+    background-color: blue;
+    height: 70px;
+    line-height: 70px;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+#menu{
+    background-color: #cccccc;
+}
+
+#menu ul li{
+    list-style: none;
+    display: block;
+    float: left;
+    border-right: 1px solid black;
+}
+
+#menu ul li a {
+    display: block;
+    padding: 15px;
+    color: #01353b;
+}
+
+#menu ul li:hover{
+    background-color: blue;
+}
+
+#menu ul li:hover a {
+    color: white;
+}
+
+#contenido{
+    display: block;
+    float: left;
+    width: 70%;
+    border: 1px solid red;
+}
+
+#contenido > h1 {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    color: #444;
+    /* SOMBAS EN LOS TEXTOS*/
+    /* -Primer Valor: eje x
+       -Segundo Valor: Eje y
+       -Tercer valor:  Nivel de difuminado*/
+    text-shadow: 1px 1px 2px red;
+}
+
+.caja {
+    margin: 30px;
+    display: block;
+    float: left; 
+    border: 1px dashed pink;
+    width: 350px;
+    height: 350px;
+    /* SOMBRAS EN LAS CAJAS */
+        /* -Primer Valor: eje x
+       -Segundo Valor: Eje y
+       -Tercer valor:  Nivel de difuminado*/
+    box-shadow: 5px 5px 15px black;
+
+    /* BORDES REONDEADOS */
+    /* De este modo se aplica el mismo borde redondeado a todas las esquinas. */
+    /* border-radius: 10px; */
+    /* Puede aplicarsele a todos los lados, yendo de la esquina superior izquierda la inferiro izquierda.
+    Asi podemos crear figuras interesantes.*/
+    border-radius: 10px 20px 30px 40px;
+
+}
+
+/* SOMBRA INTERIOR PARA DAR EFECTO DE PRFUNDIAD */
+.sombra-interior {
+    /* Solo agregamos inset al final. */
+    box-shadow: 5px 5px 15px black inset !important;
+}
+
+/* Con hover podemos jugar para hacer parecer que entra y sale la caja. */
+.sombra-interior:hover {
+    /* Solo agregamos inset al final. */
+    box-shadow: 5px 5px 15px black !important;
+    /* Al ser cajas cuadradas con esa propiedad podemos aplicarla a todas */
+    border-radius: 999px;
+}
+
+.caja h2 {
+    color: tomato;
+    text-align: center;
+    height: 350px;
+    line-height: 350px;
+}
+
+#lateral {
+    display: block;
+    float: left;
+    width: 29%;
+    height: 100px;
+    border: 1px solid green;
+}
+
+#footer {
+    width: 100%;
+    color: white;
+    background-color: gray;
+    text-align: center;
+}

@@ -1,0 +1,123 @@
+#boton {
+    display: block;
+    padding: 20px;
+    background-color: green;
+    color: white;
+    width: 200px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border: 5px solid rgb(1, 59, 1);
+    /* TRANSISIONES */
+    /* Determina el tiempo que pasara al aplicar los estilos de un estado a otro.
+    - All lo aplicamos a todos los estilos.
+    - Podemos seleccionar solo un atributo
+    - Podemos separar atributos por coma y aplicarle un tiempo a cada uno. */
+
+    transition: all 500ms;
+    /* transition:  border-radius 3s; */
+    /* transition:  border 500ms, background 3s, border-radius 1s; */
+
+}
+
+#boton:hover {
+    border-radius: 15px;
+    background: orangered;
+    border: 5px solid red;
+}
+
+#caja {
+    width: 250px;
+    height: 250px;
+    background: lightseagreen;
+    margin-top: 25px;
+    color: white;
+    border: 5px solid black;
+    text-align: center;
+    line-height: 250px;
+    /* Aplicar animacion */
+    animation-name: desplazamiento1;
+    /* Tiempo que dura la animacion */
+    animation-duration: 10s;
+    /* Que sea infita la ejecucion */
+    animation-iteration-count: infinite;
+    /* Hace que vaya a la misma velocidad */
+    animation-timing-function: linear;
+}
+
+#caja2 {
+    width: 250px;
+    height: 250px;
+    background: lightcoral;
+    margin-top: 25px;
+    color: white;
+    border: 5px solid black;
+    text-align: center;
+    line-height: 250px;
+    /* Aplicar animacion */
+    animation-name: desplazamiento2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#caja3 {
+    width: 250px;
+    height: 250px;
+    background: lightgreen;
+    margin-top: 25px;
+    color: white;
+    border: 5px solid black;
+    text-align: center;
+    line-height: 250px;
+    /* Aplicar animacion */
+    animation-name: desplazamiento3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* Fotogramas clave */
+
+/* Forma corta, solo de un punto A a un punto B */
+@keyframes desplazamiento1 {
+    from {
+        margin-left: 0px;
+    }
+    to {
+        margin-left: 1200px;
+    }
+}
+
+/* Por porcentajes */
+@keyframes desplazamiento2 {
+    0% {
+        margin-left: 0px;
+    }
+    50% {
+        margin-left: 1200px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+/* Tranformaciones en CSS */
+@keyframes desplazamiento3 {
+    0% {
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+    50% {
+        margin-left: 1200px;
+        transform: rotate(360deg);
+        border-radius: 999px;
+    }
+
+    100% {
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+}

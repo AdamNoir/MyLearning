@@ -40,11 +40,15 @@
     /* Todo esto de los flotados solo aplica a los elementos con su display block. 
     Los inlinea no funciona.
     Aunque lo tienen por defecto, es bueno ser espesifico. */
+    /* El display bock es para las cajas y otros elementos, el inline es para los textos, las enlaces y demas. Elementos no pensados
+    para ser movidos de un lado a otro, pues lo general se mueven con el bloque. */
     display: block;
      /* Float mueve las cajas a la izquierda o la derecha */
-     float: left;
+    float: left;
 }
 
+/* Todos los demas elementos tratatan de aplicar un flotado intentando continuar el flujo.
+Aqui el clear fix lo limpia, APARTIR DEL MOMENTO EN QUE APARECE EL DIV QUE CONTENGA CLEARFIX */
 .clearfix {
     /* No tiene ningun flotado */
     float: none;
